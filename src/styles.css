@@ -1,1 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
+/*引入组件基本样式*/
+@import "~ng-zorro-antd/style/index.css";
+/*按需引用组件样式*/
+@import "~ng-zorro-antd/grid/style/index.css";
