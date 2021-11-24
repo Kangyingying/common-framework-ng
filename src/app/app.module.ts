@@ -3,6 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {NzGridModule} from 'ng-zorro-antd/grid';
+import {HTTP_INTERCEPTORS} from '@angular/common/http';
+import {CustomInterceptor} from '../interceptor/custom.interceptor';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import {NzGridModule} from 'ng-zorro-antd/grid';
     /*按需引入组件*/
     NzGridModule
   ],
-  providers: [],
+  providers: [
+    {provide: HTTP_INTERCEPTORS, useClass: CustomInterceptor, multi: true}
+    ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
