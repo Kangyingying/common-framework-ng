@@ -4,7 +4,11 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve --open",
+    "start:test": "ng serve --configuration=test --open",
+    "start:prod": "ng serve --p --open",
     "build": "ng build",
+    "build:test": "ng build --configuration=test",
+    "build:prod": "ng build --p",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
