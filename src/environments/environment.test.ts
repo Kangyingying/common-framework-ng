@@ -1,5 +1,5 @@
 export const environment = {
   production: true,
-  env: 'prod',
+  env: 'test',
   domain: 'https://xxxx.com'
 };
