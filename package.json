@@ -29,6 +29,7 @@
     "@angular/cli": "~13.0.3",
     "@angular/compiler-cli": "~13.0.2",
     "@types/node": "~16.11.9",
+    "codelyzer": "^6.0.2",
     "protractor": "~7.0.0",
     "ts-node": "~10.4.0",
     "tslint": "~6.1.3",
